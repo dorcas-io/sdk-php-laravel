@@ -1,6 +1,6 @@
 {
   "name": "dorcas/sdk-php-laravel",
-  "homepage": "https://dorcas.io",
+  "homepage": "https://dorcas.iocd",
   "description": "Dorcas SDK for PHP - Allows you to use the Dorcas API services in your web apps",
   "keywords": ["dorcas","business","sdk","invoicing"],
   "type": "library",
