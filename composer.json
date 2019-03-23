@@ -1,11 +1,14 @@
 {
   "name": "dorcas/sdk-php-laravel",
-  "homepage": "https://dorcas.iocd",
+  "homepage": "https://dorcas.io",
   "description": "Dorcas SDK for PHP - Allows you to use the Dorcas API services in your web apps",
-  "keywords": ["dorcas","business","sdk","invoicing"],
+  "keywords": ["dorcas","business","sdk","php","developer"],
   "type": "library",
-  "license": "MIT",
+  "license": "GPL-3.0-or-later",
   "authors": [
+    {
+      "name": "Ifeoluwa Olawoye"
+    },
     {
       "name": "Emmanuel Okeke",
       "homepage": "https://github.com/emmanix2002"
