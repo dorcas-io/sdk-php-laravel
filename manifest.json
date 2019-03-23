@@ -1,0 +1,265 @@
+{
+  "resources": {
+    "Advert": {
+      "client": "Advert",
+      "namespace": "Hostville\\Dorcas\\Resources\\ECommerce",
+      "path": "adverts",
+      "includes": [],
+      "headers": ["Authorization"]
+    },
+    "AppStore": {
+      "client": "AppStore",
+      "namespace": "Hostville\\Dorcas\\Resources\\Developers",
+      "path": "developers/app-store",
+      "includes": ["oauth_client"],
+      "headers": ["Authorization"]
+    },
+    "Blog": {
+      "client": "Blog",
+      "namespace": "Hostville\\Dorcas\\Resources\\ECommerce",
+      "path": "blog",
+      "includes": [],
+      "headers": ["Authorization"]
+    },
+    "Company": {
+      "client": "Company",
+      "namespace": "Hostville\\Dorcas\\Resources",
+      "path": "companies",
+      "includes": ["customers", "departments", "employees", "locations", "orders", "services", "teams"],
+      "headers": ["Authorization"]
+    },
+    "ContactField": {
+      "client": "ContactField",
+      "namespace": "Hostville\\Dorcas\\Resources\\Crm",
+      "path": "contact-fields",
+      "includes": ["customers"],
+      "headers": ["Authorization"]
+    },
+    "Country": {
+      "client": "Country",
+      "namespace": "Hostville\\Dorcas\\Resources\\Common",
+      "path": "countries",
+      "includes": ["states"],
+      "headers": ["Authorization"]
+    },
+    "Coupon": {
+      "client": "Coupon",
+      "namespace": "Hostville\\Dorcas\\Resources",
+      "path": "coupons",
+      "includes": ["plan", "user", "usages"],
+      "headers": ["Authorization"]
+    },
+    "Customer": {
+      "client": "Customer",
+      "namespace": "Hostville\\Dorcas\\Resources\\Crm",
+      "path": "customers",
+      "includes": ["company", "contacts", "orders"],
+      "headers": ["Authorization"]
+    },
+    "Deal": {
+      "client": "Deal",
+      "namespace": "Hostville\\Dorcas\\Resources\\Crm",
+      "path": "deals",
+      "includes": ["customer", "stages"],
+      "headers": ["Authorization"]
+    },
+    "Department": {
+      "client": "Department",
+      "namespace": "Hostville\\Dorcas\\Resources\\Common\\Company",
+      "path": "company/departments",
+      "includes": ["company", "employees"],
+      "headers": ["Authorization"]
+    },
+    "Directory": {
+      "client": "Directory",
+      "namespace": "Hostville\\Dorcas\\Resources\\Common",
+      "path": "directory",
+      "includes": ["professional_credentials", "professional_experiences", "professional_services"],
+      "headers": ["Authorization"]
+    },
+    "Developer": {
+      "client": "Developer",
+      "namespace": "Hostville\\Dorcas\\Resources\\Developers",
+      "path": "developers",
+      "includes": [],
+      "headers": ["Authorization"]
+    },
+    "DeveloperApplication": {
+      "client": "Application",
+      "namespace": "Hostville\\Dorcas\\Resources\\Developers",
+      "path": "developers/applications",
+      "includes": ["oauth_client", "user"],
+      "headers": ["Authorization"]
+    },
+    "Domain": {
+      "client": "Domain",
+      "namespace": "Hostville\\Dorcas\\Resources\\ECommerce",
+      "path": "domains",
+      "includes": ["issuances", "owner"],
+      "headers": ["Authorization"]
+    },
+    "Employee": {
+      "client": "Employee",
+      "namespace": "Hostville\\Dorcas\\Resources\\Common\\Company",
+      "path": "company/employees",
+      "includes": ["company", "department", "location", "teams"],
+      "headers": ["Authorization"]
+    },
+    "Finance": {
+      "client": "Finance",
+      "namespace": "Hostville\\Dorcas\\Resources\\Finance",
+      "path": "finance",
+      "includes": ["company", "sub_accounts", "entries", "parent_account", "account"],
+      "headers": ["Authorization"]
+    },
+    "Group": {
+      "client": "Group",
+      "namespace": "Hostville\\Dorcas\\Resources\\Crm",
+      "path": "groups",
+      "includes": ["company", "customers"],
+      "headers": ["Authorization"]
+    },
+    "Integration": {
+      "client": "Integration",
+      "namespace": "Hostville\\Dorcas\\Resources\\Common\\Company",
+      "path": "integrations",
+      "includes": ["company"],
+      "headers": ["Authorization"]
+    },
+    "Invite": {
+      "client": "Invite",
+      "namespace": "Hostville\\Dorcas\\Resources",
+      "path": "invites",
+      "includes": [],
+      "headers": ["Authorization"]
+    },
+    "Location": {
+      "client": "Location",
+      "namespace": "Hostville\\Dorcas\\Resources\\Common\\Company",
+      "path": "company/locations",
+      "includes": ["company", "employees", "state"],
+      "headers": ["Authorization"]
+    },
+    "Order": {
+      "client": "Order",
+      "namespace": "Hostville\\Dorcas\\Resources\\Invoicing",
+      "path": "orders",
+      "includes": ["company", "customers", "products"],
+      "headers": ["Authorization"]
+    },
+    "Partner": {
+      "client": "Partner",
+      "namespace": "Hostville\\Dorcas\\Resources",
+      "path": "partners",
+      "includes": ["companies", "users"],
+      "headers": []
+    },
+    "Plan": {
+      "client": "Plan",
+      "namespace": "Hostville\\Dorcas\\Resources",
+      "path": "plans",
+      "includes": ["companies"],
+      "headers": []
+    },
+    "Product": {
+      "client": "Product",
+      "namespace": "Hostville\\Dorcas\\Resources\\Invoicing",
+      "path": "products",
+      "includes": ["company", "orders", "prices"],
+      "headers": ["Authorization"]
+    },
+    "ProductCategory": {
+      "client": "ProductCategory",
+      "namespace": "Hostville\\Dorcas\\Resources\\Invoicing",
+      "path": "product-categories",
+      "includes": ["company", "products"],
+      "headers": ["Authorization"]
+    },
+    "State": {
+      "client": "State",
+      "namespace": "Hostville\\Dorcas\\Resources\\Common",
+      "path": "states",
+      "includes": ["country"],
+      "headers": ["Authorization"]
+    },
+    "Team": {
+      "client": "Team",
+      "namespace": "Hostville\\Dorcas\\Resources\\Common\\Company",
+      "path": "company/teams",
+      "includes": ["company", "employees"],
+      "headers": ["Authorization"]
+    },
+    "User": {
+      "client": "User",
+      "namespace": "Hostville\\Dorcas\\Resources\\Users",
+      "path": "users",
+      "includes": ["company"],
+      "headers": ["Authorization"]
+    }
+  },
+  "services": {
+    "Authorization": {
+      "client": "Authorization",
+      "namespace": "Hostville\\Dorcas\\Services\\Identity",
+      "path": "auth",
+      "parameters": {
+        "required": ["client_id", "client_secret", "email"],
+        "optional": []
+      }
+    },
+    "Company": {
+      "client": "Company",
+      "namespace": "Hostville\\Dorcas\\Services\\Identity",
+      "path": "company",
+      "parameters": {
+        "required": [],
+        "optional": []
+      }
+    },
+    "Metrics": {
+      "client": "Metrics",
+      "namespace": "Hostville\\Dorcas\\Services",
+      "path": "statistics",
+      "parameters": {
+        "required": ["metrics"],
+        "optional": ["from_date", "to_date"]
+      }
+    },
+    "PasswordLogin": {
+      "client": "PasswordLogin",
+      "namespace": "Hostville\\Dorcas\\Services\\Identity",
+      "path": "oauth/token",
+      "parameters": {
+        "required": ["client_id", "client_secret", "grant_type", "username", "password", "scope"],
+        "optional": []
+      }
+    },
+    "Profile": {
+      "client": "Profile",
+      "namespace": "Hostville\\Dorcas\\Services\\Identity",
+      "path": "me",
+      "parameters": {
+        "required": [],
+        "optional": []
+      }
+    },
+    "Registration": {
+      "client": "Registration",
+      "namespace": "Hostville\\Dorcas\\Services\\Identity",
+      "path": "register",
+      "parameters": {
+        "required": ["client_id", "client_secret", "email", "password", "firstname", "lastname", "phone", "company"],
+        "optional": []
+      }
+    },
+    "Store": {
+      "client": "Store",
+      "namespace": "Hostville\\Dorcas\\Services",
+      "path": "store",
+      "parameters": {
+        "required": [],
+        "optional": []
+      }
+    }
+  }
+}
