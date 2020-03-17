@@ -46,9 +46,11 @@ use GuzzleHttp\Client;
  * @method \Hostville\Dorcas\Services\Identity\Company              createCompanyService()
  * @method \Hostville\Dorcas\Services\Metrics                       createMetricsService()
  * @method \Hostville\Dorcas\Services\Identity\PasswordLogin        createPasswordLoginService()
- * @method \Hostville\Dorcas\Services\Identity\Profile              createProfileService()
+ * @method \Hostville\Dorcas\Services\Identity\Profile               createProfileService()
  * @method \Hostville\Dorcas\Services\Identity\Registration         createRegistrationService()
  * @method \Hostville\Dorcas\Services\Store                         createStoreService()
+ * @method \Hostville\Dorcas\Resources\Finance\Tax                     createTaxResource(string $id = null)
+ * @method \Hostville\Dorcas\Resources\Payroll\Payroll              createPayrollResource(string $id = null)
  *
  */
 class Sdk
@@ -213,7 +215,7 @@ class Sdk
     {
         $entry = $this->manifest->getResource($name);
         # we check for the manifest entry
-        
+
         if (empty($entry)) {
             throw new ResourceNotFoundException('Could not find the client for the requested resource '.$name);
         }
