@@ -13,6 +13,11 @@ class UrlRegistry
         'local' => env('DORCAS_ENV_LOCAL', 'http://api.dorcas.local')
     ];
 
+//    const ENVIRONMENTS = [
+//        'production' => 'http://localhost:8000',
+////        'staging' => 'https://staging-api.dorcas.ng',
+////        'local' => 'http://api.dorcas.local'
+//    ];
     /**
      * @var string
      */

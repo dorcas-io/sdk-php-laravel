@@ -112,6 +112,24 @@
       "includes": ["company", "sub_accounts", "entries", "parent_account", "account"],
       "headers": ["Authorization"]
     },
+
+    "Payroll": {
+      "client": "Payroll",
+      "namespace": "Hostville\\Dorcas\\Resources\\Payroll",
+      "path": "payroll",
+      "includes": ["company", "allowances", "transactions", "paygroup", "payroll_run","authorities"],
+      "headers": ["Authorization"]
+    },
+
+    "Tax": {
+      "client": "Tax",
+      "namespace": "Hostville\\Dorcas\\Resources\\Finance",
+      "path": "finance/tax",
+      "includes": ["company", "authorities", "elements", "tax_runs"],
+      "headers": ["Authorization"]
+    },
+
+
     "Group": {
       "client": "Group",
       "namespace": "Hostville\\Dorcas\\Resources\\Crm",
