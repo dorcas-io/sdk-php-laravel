@@ -8,16 +8,11 @@ use GuzzleHttp\Psr7\Uri;
 class UrlRegistry
 {
     const ENVIRONMENTS = [
-        'production' => env('SDK_HOST_PRODUCTION', 'https://api.dorcas.ng'),
-        'staging' => env('SDK_HOST_STAGING', 'https://staging-api.dorcas.ng'),
-        'local' => env('SDK_HOST_LOCAL', 'http://api.dorcas.local')
+        'production' => 'https://api.dorcas.ng',
+        'staging' => 'https://staging-api.dorcas.ng',
+        'local' => 'http://api.dorcas.local'
     ];
 
-//    const ENVIRONMENTS = [
-//        'production' => 'http://localhost:8000',
-////        'staging' => 'https://staging-api.dorcas.ng',
-////        'local' => 'http://api.dorcas.local'
-//    ];
     /**
      * @var string
      */
