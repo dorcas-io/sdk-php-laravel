@@ -120,6 +120,20 @@
       "includes": ["company", "allowances", "transactions", "paygroup", "payroll_run","authorities"],
       "headers": ["Authorization"]
     },
+    "Approvals": {
+      "client": "Approvals",
+      "namespace": "Hostville\\Dorcas\\Resources\\People",
+      "path": "approvals",
+      "includes": ["company", "approvals", "authorizers", "requests"],
+      "headers": ["Authorization"]
+    },
+    "Leaves": {
+      "client": "Leaves",
+      "namespace": "Hostville\\Dorcas\\Resources\\People",
+      "path": "leave",
+      "includes": ["company", "types", "groups", "requests"],
+      "headers": ["Authorization"]
+    },
 
     "Tax": {
       "client": "Tax",
