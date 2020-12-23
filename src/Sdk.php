@@ -57,7 +57,7 @@ use GuzzleHttp\Client;
  */
 class Sdk
 {
-    const VERSION = '0.0.1';
+    const VERSION = '0.0.9';
 
     /**
      * The configuration options to be used throughout the Sdk.
@@ -98,7 +98,7 @@ class Sdk
     public function __construct(array $args = [])
     {
         if (empty($args['environment'])) {
-            $args['environment'] = 'staging';
+            $args['environment'] = 'dev';
         }
         $this->checkCredentials($args);
         $this->args = $args;

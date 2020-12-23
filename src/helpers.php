@@ -55,7 +55,7 @@ function dorcas_sdk_app_path(string $path = null): string
  */
 function http_client(\GuzzleHttp\Psr7\Uri $uri = null): \GuzzleHttp\Client
 {
-    $verify = !empty(env('DORCAS_CURL_SSL_VERIFY')) ? env('DORCAS_CURL_SSL_VERIFY') : true;
+    $verify = null !== env('DORCAS_CURL_SSL_VERIFY') ? env('DORCAS_CURL_SSL_VERIFY') : true;
     $options = [
         \GuzzleHttp\RequestOptions::ALLOW_REDIRECTS => true,
         \GuzzleHttp\RequestOptions::CONNECT_TIMEOUT => 30.0,
