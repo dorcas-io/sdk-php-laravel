@@ -16,7 +16,7 @@ class UrlRegistry
     /**
      * @var string
      */
-    private $environment = 'dev';
+    private $environment = 'development';
 
     /**
      * @var Uri

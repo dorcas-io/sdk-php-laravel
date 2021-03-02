@@ -98,7 +98,7 @@ class Sdk
     public function __construct(array $args = [])
     {
         if (empty($args['environment'])) {
-            $args['environment'] = 'dev';
+            $args['environment'] = 'development';
         }
         $this->checkCredentials($args);
         $this->args = $args;
