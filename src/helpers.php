@@ -65,7 +65,7 @@ function http_client(\GuzzleHttp\Psr7\Uri $uri = null): \GuzzleHttp\Client
         ],
         \GuzzleHttp\RequestOptions::VERIFY => $verify
     ];
-    if (!empty($baseUrl)) {
+    if (!empty($uri)) { //$baseUrl before
         $options['base_uri'] = $uri->getScheme() . '://' . $uri->getAuthority();
         $options['base_uri'] .= !empty($uri->getPath()) ? '/'.$uri->getPath() : '';
 
