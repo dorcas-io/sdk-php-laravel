@@ -9,8 +9,8 @@ class UrlRegistry
 {
    const ENVIRONMENTS = [
        'production' => 'https://api.dorcas.io',
-       'staging' => 'https://staging-api.dorcas.io',
-       'dev' => 'http://core.dorcashub.test'
+       'staging' => 'https://core-base.staging.dorcas.io',
+       'dev' => 'http://core-base.test'
    ];
 
     /**
@@ -33,7 +33,7 @@ class UrlRegistry
         $envs = array_keys(self::ENVIRONMENTS);
         # get the available environment
         $this->environment = !in_array(strtolower($env), $envs) ? 'staging' : strtolower($env);
-        $base = !empty(env('DORCAS_BASE_URL')) ? env('DORCAS_BASE_URL') : self::ENVIRONMENTS[$this->environment];
+        $base = !empty(env('SDK_HOST_PRODUCTION')) ? env('SDK_HOST_PRODUCTION') : self::ENVIRONMENTS[$this->environment];
         $this->uri = new Uri($base);
     }
 
