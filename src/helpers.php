@@ -147,6 +147,7 @@ function login_via_password(Hostville\Dorcas\Sdk $sdk, string $username, string 
     $response = $service->addBodyParam('username', $username)
                         ->addBodyParam('password', $password)
                         ->send('post');
+//    dd($response);
     # sends a HTTP POST request with the parameters
     return $response->isSuccessful() && $returnToken ? $response->getData()['access_token'] : $response;
 }
