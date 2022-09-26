@@ -284,6 +284,15 @@
         "optional": []
       }
     },
+    "CategoryMapping": {
+      "client": "CategoryMapping",
+      "namespace": "Hostville\\Dorcas\\Services",
+      "path": "map-category",
+      "parameters": {
+        "required": [],
+        "optional": []
+      }
+    },
     "Store": {
       "client": "Store",
       "namespace": "Hostville\\Dorcas\\Services",

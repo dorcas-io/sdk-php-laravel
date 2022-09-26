@@ -51,9 +51,9 @@ use GuzzleHttp\Client;
  * @method \Hostville\Dorcas\Services\Store                         createStoreService()
 * @method \Hostville\Dorcas\Resources\Finance\Tax                     createTaxResource(string $id = null)
  * @method \Hostville\Dorcas\Resources\Payroll\Payroll              createPayrollResource(string $id = null)
- * @method \Hostville\Dorcas\Resources\People\Leaves              createLeavesResource(string $id = null)
+ * @method \Hostville\Dorcas\Resources\People\Leaves                createLeavesResource(string $id = null)
  * @method \Hostville\Dorcas\Resources\People\Approvals              createApprovalsResource(string $id = null)
- *
+ * @method \Hostville\Dorcas\Services\CategoryMapping                        createCategoryMappingService()
  */
 class Sdk
 {
