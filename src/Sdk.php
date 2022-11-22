@@ -30,6 +30,7 @@ use GuzzleHttp\Client;
  * @method \Hostville\Dorcas\Resources\Common\Company\Location      createLocationResource(string $id = null)
  * @method \Hostville\Dorcas\Resources\Common\Company\Team          createTeamResource(string $id = null)
  * @method \Hostville\Dorcas\Resources\Common\Company\Task          createTaskResource(string $id = null)
+ * @method \Hostville\Dorcas\Resources\Common\Company\Project       createProjectResource(string $id = null)
  * @method \Hostville\Dorcas\Resources\Crm\ContactField             createContactFieldResource(string $id = null)
  * @method \Hostville\Dorcas\Resources\Crm\Customer                 createCustomerResource(string $id = null)
  * @method \Hostville\Dorcas\Resources\Crm\Deal                     createDealResource(string $id = null)

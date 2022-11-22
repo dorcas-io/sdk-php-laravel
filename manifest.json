@@ -228,6 +228,13 @@
       "includes": ["company", "employees"],
       "headers": ["Authorization"]
     },
+    "Project": {
+      "client": "Project",
+      "namespace": "Hostville\\Dorcas\\Resources\\Common\\Company",
+      "path": "company/projects",
+      "includes": ["company"],
+      "headers": ["Authorization"]
+    },
     "User": {
       "client": "User",
       "namespace": "Hostville\\Dorcas\\Resources\\Users",
