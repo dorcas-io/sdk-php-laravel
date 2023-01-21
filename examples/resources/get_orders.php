@@ -6,6 +6,7 @@ $sdk = new Hostville\Dorcas\Sdk(['credentials' => ['id' => 2, 'secret' => 'hFWx5
 if (empty($_SESSION['token'])) {
     $token = login_via_password($sdk, 'user@example.org', 'administrator');
     $_SESSION['token'] = $token;
+
 }
 # don't get too excited; this is a token that only works on my local machine :)
 $sdk->setAuthorizationToken($_SESSION['token']);
