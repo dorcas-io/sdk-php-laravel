@@ -221,6 +221,20 @@
       "includes": ["company", "employees"],
       "headers": ["Authorization"]
     },
+    "Task": {
+      "client": "Task",
+      "namespace": "Hostville\\Dorcas\\Resources\\Common\\Company",
+      "path": "company/tasks",
+      "includes": ["company", "employees"],
+      "headers": ["Authorization"]
+    },
+    "Project": {
+      "client": "Project",
+      "namespace": "Hostville\\Dorcas\\Resources\\Common\\Company",
+      "path": "company/projects",
+      "includes": ["company"],
+      "headers": ["Authorization"]
+    },
     "User": {
       "client": "User",
       "namespace": "Hostville\\Dorcas\\Resources\\Users",
@@ -281,6 +295,15 @@
       "path": "register",
       "parameters": {
         "required": ["client_id", "client_secret", "email", "password", "firstname", "lastname", "phone", "company"],
+        "optional": []
+      }
+    },
+    "CategoryMapping": {
+      "client": "CategoryMapping",
+      "namespace": "Hostville\\Dorcas\\Services",
+      "path": "map-category",
+      "parameters": {
+        "required": [],
         "optional": []
       }
     },

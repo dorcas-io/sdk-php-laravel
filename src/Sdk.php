@@ -29,6 +29,8 @@ use GuzzleHttp\Client;
  * @method \Hostville\Dorcas\Resources\Common\Company\Integration   createIntegrationResource(string $id = null)
  * @method \Hostville\Dorcas\Resources\Common\Company\Location      createLocationResource(string $id = null)
  * @method \Hostville\Dorcas\Resources\Common\Company\Team          createTeamResource(string $id = null)
+ * @method \Hostville\Dorcas\Resources\Common\Company\Task          createTaskResource(string $id = null)
+ * @method \Hostville\Dorcas\Resources\Common\Company\Project       createProjectResource(string $id = null)
  * @method \Hostville\Dorcas\Resources\Crm\ContactField             createContactFieldResource(string $id = null)
  * @method \Hostville\Dorcas\Resources\Crm\Customer                 createCustomerResource(string $id = null)
  * @method \Hostville\Dorcas\Resources\Crm\Deal                     createDealResource(string $id = null)
@@ -51,9 +53,9 @@ use GuzzleHttp\Client;
  * @method \Hostville\Dorcas\Services\Store                         createStoreService()
 * @method \Hostville\Dorcas\Resources\Finance\Tax                     createTaxResource(string $id = null)
  * @method \Hostville\Dorcas\Resources\Payroll\Payroll              createPayrollResource(string $id = null)
- * @method \Hostville\Dorcas\Resources\People\Leaves              createLeavesResource(string $id = null)
+ * @method \Hostville\Dorcas\Resources\People\Leaves                createLeavesResource(string $id = null)
  * @method \Hostville\Dorcas\Resources\People\Approvals              createApprovalsResource(string $id = null)
- *
+ * @method \Hostville\Dorcas\Services\CategoryMapping                 createCategoryMappingService()
  */
 class Sdk
 {
@@ -97,6 +99,7 @@ class Sdk
      */
     public function __construct(array $args = [])
     {
+
         if (empty($args['environment'])) {
             $args['environment'] = 'development';
         }
@@ -105,7 +108,7 @@ class Sdk
         $this->urlRegistry = new UrlRegistry($args['environment']);
         $this->httpClient = http_client();
         $this->manifest = new Manifest();
-        $this->token = data_get($args, 'credentials.token', null);
+        $this->token = data_get($args, 'credentials.token',null);
     }
 
     /**
@@ -191,11 +194,13 @@ class Sdk
      */ 
     private function checkCredentials(array $args = []): bool
     {
+
         if (empty($args['credentials'])) {
             throw new DorcasException('You did not provide the Dorcas client credentials in the configuration.', $args);
         }
         $id = data_get($args, 'credentials.id', null);
         $secret = data_get($args, 'credentials.secret', null);
+        
         if (empty($id)) {
             throw new DorcasException('The client "id" key is absent in the credentials configuration.', $args);
         }
