@@ -56,6 +56,7 @@ use GuzzleHttp\Client;
  * @method \Hostville\Dorcas\Resources\People\Leaves                createLeavesResource(string $id = null)
  * @method \Hostville\Dorcas\Resources\People\Approvals              createApprovalsResource(string $id = null)
  * @method \Hostville\Dorcas\Services\CategoryMapping                 createCategoryMappingService()
+ * @method \Hostville\Dorcas\Services\ProductReview                 createProductReviewService()
  */
 class Sdk
 {

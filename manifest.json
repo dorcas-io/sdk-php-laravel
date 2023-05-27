@@ -307,6 +307,15 @@
         "optional": []
       }
     },
+    "ProductReview": {
+      "client": "ProductReview",
+      "namespace": "Hostville\\Dorcas\\Services",
+      "path": "product/reviews",
+      "parameters": {
+        "required": [],
+        "optional": []
+      }
+    },
     "Store": {
       "client": "Store",
       "namespace": "Hostville\\Dorcas\\Services",
