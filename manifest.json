@@ -316,6 +316,15 @@
         "optional": []
       }
     },
+    "ShippingIntegration": {
+      "client": "ShippingIntegration",
+      "namespace": "Hostville\\Dorcas\\Services",
+      "path": "shipping/integration",
+      "parameters": {
+        "required": [],
+        "optional": []
+      }
+    },
     "Store": {
       "client": "Store",
       "namespace": "Hostville\\Dorcas\\Services",
